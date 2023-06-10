@@ -1,0 +1,88 @@
+Atividade:
+
+A) Peça duas notas, em seguida realize a média e informe se o aluno está
+aprovado ou reprovado. Para essa atividade, o aluno precisa ter média 7 ou
+mais para ser considerado aprovado.
+R:
+
+let prova1 = "nota"
+let prova2 = "nota"
+
+if (prova1 >= 7 || prova2 >=7){document.write
+("aprovado")}
+else {document.write ("reprovado")}
+
+b) O usuário informa dois valores numéricos, se forem iguais deverão ser
+somados, caso contrário multiplicados.
+R: 
+<script>
+    let valorNumérico = "valor"
+    let valorNumérico1 = "valor"
+
+    if (valorNumérico == valorNumérico1){
+        document.write(valorNumérico+valorNumérico1)
+    } else {
+        document.write(valorNumérico*valorNumérico1)
+    }
+    </script>
+
+c) Haverá uma lista com quatro produtos que uma lanchonete vende, o usuário
+precisa informar o código do produto, em seguida o valor pago por ele. Nosso
+sistema precisa retornar o troco que deve ser dado ao cliente, valide caso o
+cliente informe um pagamento inferior ao valor do pedido.
+R: 
+
+let produtos = new Array("pizza", "pão", "queijo", "tomate")
+let codigoProduto = 1
+let valor = "seu dinheiro"
+
+if (codigoProduto == 0 && valor >= 15){document.write(valor-15)
+}
+ else if (produtos  [1] && valor >= 10){document.write(valor-10)
+}
+ else if (produtos  [2] && valor >= 17){document.write(valor-17)
+}
+ else if (produtos [3] && valor >= 4){document.write(valor-4)
+}
+else [document.write("valor abaixo do produto")]
+
+d) Peça para o usuário informar três números, em seguida exiba o menor deles
+R:
+
+let numero  = "informe os números"
+let numero2 = "informe os números"
+let numero3 = "informe os números"
+
+if (numero<numero2&&numero<numero3){
+    document.write(numero)
+}
+else if(numero2<numero&&numero2<numero3){
+    document.write(numero2)
+}
+else if(numero3<numero&&numero3<numero2){
+    document.write(numero3)
+}
+
+e) O usuário deverá informar a largura de cada lado de um triângulo, peça as
+    três larguras (direito, inferior e esquerdo) e verifique o tipo de triângulo. Os
+    tipos e triângulos são: ]
+
+    Isósceles Dois lados iguais e um diferente
+    
+    Escaleno Três lados diferentes
+    
+    Equilátero Três lados iguais
+R:
+
+let direito  = 230
+let inferior = 12
+let esquerdo = 24
+
+if (direito==esquerdo&&direito!=inferior||direito==inferior&&direito!=esquerdo||inferior==esquerdo&&inferior!=direito){
+    document.write("Isósceles")
+}else if(direito==esquerdo&&direito==inferior){
+    document.write("Equilátero")
+}else {
+    document.write("Escaleno")
+}
+
