@@ -1,0 +1,104 @@
+/* 
+
+a) O usuário irá informar um número, em seguida realizar a tabuada daquele
+número
+R:
+
+let numero  = prompt("digite um numero para multiplicação")
+
+
+for (let indice = 1; indice <=10; indice++){
+
+let resultado = indice*numero
+document.write(resultado+"<br>")
+
+
+}
+     
+
+b) O usuário informa um número inicial e um número final, em seguida retorne a
+quantidade de pares e ímpares daquela cadeia de valores.
+Vamos supor que os números informados foram: 6 e 12, sendo assim serão 4
+pares (6, 8, 10 e 12) e 3 ímpares (7, 9 e 11).
+R:
+
+    let numero  = prompt("digite um numero inicial")
+    let numero2 = prompt("digite o numero final")
+    let contadorPar = 0
+    let contadorImpar = 0
+
+
+
+for (let indice = numero; indice <=numero2; indice++)
+   
+    if (indice % 2 == 0){
+    document.write("par: "+indice+"<br>")
+    contadorPar++
+    }
+    else
+        {document.write("impar: "+indice+"<br>")
+        contadorImpar++
+    }
+    document.write("Número de par: "+contadorPar+"<br>")
+    document.write("Número de ímpar: "+contadorImpar)
+
+  c) Crie um pequeno sistema de votação, exiba em um prompt() as opções:
+1 - Alessandra
+2 - Caio
+3 - Geraldo
+4 - Talita
+5 - Sair
+ Enquanto não for digitado o número 5 o laço deverá realizar a ação de
+prompt() para pedir o voto e contabilizar para o candidato. Quando
+informado o número 5 retorne a quantidade de votos que cada candidato
+obteve.
+R:
+
+let Alessandra = 0
+let Caio = 0
+let Geraldo = 0
+let Talita = 0
+let votacao
+do{
+
+votacao = prompt("VOTE EM: Alessandra, Caio, Geraldo, Talita")
+
+if  (votacao=="Alessandra"){
+     Alessandra++
+}
+else if (votacao=="Caio"){
+     Caio++
+}
+else if (votacao=="Geraldo"){
+     Geraldo++
+}
+else if (votacao=="Talita"){
+     Talita++
+}
+}while   (votacao != "sair")
+document.write(Alessandra+"<br>")
+document.write(Caio+"<br>")
+document.write(Geraldo+"<br>")
+document.write(Talita)
+
+d) Crie uma estrutura de laços de repetição que exiba a seguinte estrutura:
+5 4 3 2 1
+4 3 2 1
+3 2 1
+2 1
+1
+
+R:
+
+for(let indice = 5;indice >=1; indice--)
+{
+
+     
+     for(let indice2 = indice ;indice2 >=1; indice2--)
+{
+document.write(indice2)
+}
+     document.write("<br>")
+
+}
+*/
